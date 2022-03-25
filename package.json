@@ -1,6 +1,13 @@
 {
   "name": "root",
-  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "build:watch": "lerna run build:watch",
+    "build:types": "lerna run build:types",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
   "dependencies": {
     "pixi.js": "^6.3.0"
   },
