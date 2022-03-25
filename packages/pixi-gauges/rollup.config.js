@@ -8,7 +8,7 @@ export default [
   {
     input: "src/index.ts",
     output: {
-      name: "pixiGauges",
+      name: "PixiGauges",
       file: pkg.browser,
       format: "umd",
       sourcemap: true,

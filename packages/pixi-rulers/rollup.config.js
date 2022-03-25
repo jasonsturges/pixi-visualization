@@ -1,36 +1,35 @@
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from "rollup-plugin-typescript";
-import pkg from './package.json';
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
+import pkg from "./package.json";
 
 export default [
-	// browser-friendly UMD build
-	{
-		input: 'src/main.ts',
-		output: {
-			name: 'pixiRulers',
-			file: pkg.browser,
-			format: 'umd'
-		},
-		plugins: [
-			resolve(), // so Rollup can find `ms`
-			commonjs(), // so Rollup can convert `ms` to an ES module
-			typescript()
-		]
-	},
+  // browser-friendly UMD build
+  {
+    input: "src/index.ts",
+    output: {
+      name: "PixiRules",
+      file: pkg.browser,
+      format: "umd",
+      sourcemap: true,
+      globals: { "pixi.js": "PIXI" },
+    },
+    external: ["pixi.js"],
+    plugins: [
+      resolve(), //
+      commonjs(),
+      typescript({ tsconfig: "./tsconfig.json" }),
+    ],
+  },
 
-	// CommonJS (for Node) and ES module (for bundlers) build.
-	// (We could have three entries in the configuration array
-	// instead of two, but it's quicker to generate multiple
-	// builds from a single configuration where possible, using
-	// an array for the `output` option, where we can specify
-	// `file` and `format` for each target)
-	{
-		input: 'src/main.ts',
-		plugins: [typescript()],
-		output: [
-			{ file: pkg.main, format: 'cjs' },
-      { file: pkg.module, format: "es" },
-		]
-	}
+  // CommonJS (for Node) and ES module (for bundlers) build.
+  {
+    input: "src/index.ts",
+    output: [
+      { file: pkg.main, format: "cjs", sourcemap: true },
+      { file: pkg.module, format: "es", sourcemap: true },
+    ],
+    external: ["pixi.js"],
+    plugins: [typescript({ tsconfig: "./tsconfig.json" })],
+  },
 ];

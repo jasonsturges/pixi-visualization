@@ -8,7 +8,7 @@ export default [
   {
     input: "src/index.ts",
     output: {
-      name: "PixiGraphpaper",
+      name: "pixiGauges",
       file: pkg.browser,
       format: "umd",
       sourcemap: true,
@@ -18,7 +18,7 @@ export default [
     plugins: [
       resolve(), //
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({ tsconfig: "../../tsconfig.json" }),
     ],
   },
 
@@ -30,6 +30,6 @@ export default [
       { file: pkg.module, format: "es", sourcemap: true },
     ],
     external: ["pixi.js"],
-    plugins: [typescript({ tsconfig: "./tsconfig.json" })],
+    plugins: [typescript({ tsconfig: "../../tsconfig.json" })],
   },
 ];
