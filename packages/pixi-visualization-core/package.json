@@ -1,9 +1,9 @@
 {
-  "name": "pixi-common",
+  "name": "pixi-visualization-core",
   "version": "1.0.1",
-  "description": "Pixi.js gauge visualization components",
+  "description": "Pixi.js visualization core components",
   "author": "Jason Sturges <jason@jsonsturges.com> (https://jasonsturges.com)",
-  "homepage": "https://github.com/jasonsturges/pixi-gauges",
+  "homepage": "https://github.com/jasonsturges/pixi-visualization",
   "license": "ISC",
   "keywords": [
     "pixi",
