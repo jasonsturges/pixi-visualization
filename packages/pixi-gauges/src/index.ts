@@ -21,3 +21,5 @@ export { PolarAxisOptions } from "./display/PolarAxisOptions";
 export { RadialGauge } from "./display/RadialGauge";
 export { RadialGaugeDefaultOptions } from "./factory/RadialGaugeDefaultOptions";
 export { RadialGaugeOptions } from "./display/RadialGaugeOptions";
+
+export { parseColor } from "./utils/ColorUtils"
