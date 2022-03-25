@@ -1,22 +1,18 @@
 {
-  "name": "pixi-editor",
-  "version": "0.0.1",
-  "description": "Pixi.js editor",
+  "name": "pixi-common",
+  "version": "1.0.1",
+  "description": "Pixi.js gauge visualization components",
   "author": "Jason Sturges <jason@jsonsturges.com> (https://jasonsturges.com)",
-  "homepage": "https://github.com/jasonsturges/pixi-editor",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jasonsturges/pixi-editor"
-  },
+  "homepage": "https://github.com/jasonsturges/pixi-gauges",
   "license": "ISC",
   "keywords": [
     "pixi",
-    "editor"
+    "gauge",
+    "visualization"
   ],
-  "main": "dist/cjs/pixi-editor.cjs.js",
-  "module": "dist/esm/pixi-editor.esm.js",
-  "browser": "dist/browser/pixi-editor.umd.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/pixi-gauges.js",
+  "module": "dist/esm/pixi-gauges.js",
+  "browser": "dist/browser/pixi-gauges.js",
   "files": [
     "dist"
   ],
