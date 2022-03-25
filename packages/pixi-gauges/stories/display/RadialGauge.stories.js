@@ -1,6 +1,5 @@
-import { canvas, viewport } from "../Scene";
-import { parseColor } from "../../../src/utils/ColorUtils";
-import { RadialGauge } from "../../../src";
+import { canvas, viewport } from "../../../../.storybook/Scene";
+import { parseColor, RadialGauge } from "../../src";
 
 export default {
   title: "Gauge/Radial Gauge",

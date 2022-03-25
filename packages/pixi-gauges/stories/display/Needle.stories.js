@@ -1,6 +1,5 @@
-import { canvas, viewport } from "../Scene";
-import { Needle } from "../../../src";
-import { parseColor } from "../../../src/utils/ColorUtils";
+import { canvas, viewport } from "../../../../.storybook/Scene";
+import { parseColor, Needle } from "../../src";
 
 export default {
   title: "Gauge/Needle",
