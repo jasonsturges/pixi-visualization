@@ -1,4 +1,5 @@
-import { FillStyle, IFillStyleOptions, Renderer, Sprite } from "pixi.js";
+import { AbstractControl } from "@/pixi-visualization-core";
+import { FillStyle, IFillStyleOptions, Renderer } from "pixi.js";
 import { GraphOptions } from "./GraphOptions";
 import { IRule } from "../model/IRule";
 import { Rule } from "../model/Rule";
@@ -7,11 +8,10 @@ import { Rule } from "../model/Rule";
  * Abstract Graph Paper - base class defining presentation model and
  * invalidation lifecycle of graph paper.
  */
-export abstract class AbstractGraphPaper extends Sprite {
+export abstract class AbstractGraphPaper extends AbstractControl {
   private _backgroundVisible?: boolean | undefined;
   private _graphHeight?: number | undefined;
   private _graphWidth?: number | undefined;
-  private _invalidated?: boolean | undefined;
   private readonly _backgroundFill?: Partial<IFillStyleOptions> | undefined;
   private readonly _intermediateRule?: IRule | undefined;
   private readonly _majorRule?: IRule | undefined;
@@ -319,30 +319,5 @@ export abstract class AbstractGraphPaper extends Sprite {
       visible: options?.minorGridVisible,
       width: options?.minorStrokeWidth,
     });
-  }
-
-  /**
-   * Invalidate component, forcing validation on next render cycle.
-   */
-  protected invalidate() {
-    this._invalidated = true;
-  }
-
-  /**
-   * Render override for invalidation pipeline.
-   */
-  override render(renderer: Renderer) {
-    super.render(renderer);
-
-    if (this._invalidated) {
-      this.validate();
-    }
-  }
-
-  /**
-   * Validation pipeline.
-   */
-  protected validate() {
-    this._invalidated = false;
   }
 }
