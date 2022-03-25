@@ -1,4 +1,4 @@
-import { createScene } from "./stories/Scene";
+import { createScene } from "./Scene";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
