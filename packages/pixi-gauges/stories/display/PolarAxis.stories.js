@@ -2,7 +2,7 @@ import { canvas, viewport } from "../../../../.storybook/Scene";
 import { parseColor, PolarAxis } from "../../src";
 
 export default {
-  title: "Gauge/Axis",
+  title: "Gauges/Axis",
   argTypes: {
     axisAlpha: { control: { type: "range", min: 0, max: 1, step: 0.1 } },
     axisColor: { control: "color" },

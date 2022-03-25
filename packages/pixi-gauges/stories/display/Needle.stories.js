@@ -2,7 +2,7 @@ import { canvas, viewport } from "../../../../.storybook/Scene";
 import { parseColor, Needle } from "../../src";
 
 export default {
-  title: "Gauge/Needle",
+  title: "Gauges/Needle",
   argTypes: {
     needleBaseWidth: { control: { type: "range", min: 0, max: 50, step: 0.1 } },
     needleFillAlpha: { control: { type: "range", min: 0, max: 1, step: 0.1 } },

@@ -2,7 +2,7 @@ import { canvas, viewport } from "../../../../.storybook/Scene";
 import { parseColor, RadialGauge } from "../../src";
 
 export default {
-  title: "Gauge/Radial Gauge",
+  title: "Gauges/Radial Gauge",
   argTypes: {
     autoAdjustMinMax: { control: "boolean" },
     axisAlpha: { control: { type: "range", min: 0, max: 1, step: 0.1 } },
