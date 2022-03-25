@@ -1,5 +1,5 @@
-import { canvas, viewport } from "../Scene";
-import { GraphPaper, parseColor } from "../../../src";
+import {canvas, viewport} from "../../../../.storybook/Scene";
+import {GraphPaper, parseColor} from "../../src";
 
 export default {
   title: "Graph Paper/Graph Paper",

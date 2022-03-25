@@ -1,5 +1,7 @@
-import { canvas, viewport } from "../Scene";
-import { GraphPaper, GraphStyleFactory, GraphStyleType } from "../../../src";
+import { canvas, viewport } from "../../../../.storybook/Scene";
+import { GraphPaper, GraphStyleFactory, GraphStyleType } from "../../src";
+
+
 
 export default {
   title: "Graph Paper/Styles",

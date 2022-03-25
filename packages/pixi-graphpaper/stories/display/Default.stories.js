@@ -1,5 +1,5 @@
-import { canvas, viewport } from "../Scene";
-import { GraphPaper } from "../../../src";
+import { canvas, viewport } from "../../../../.storybook/Scene";
+import { GraphPaper } from "../../src";
 
 export default {
   title: "Graph Paper/Graph Paper",
