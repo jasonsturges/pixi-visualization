@@ -1,0 +1,38 @@
+{
+  "name": "pixi-rulers",
+  "version": "0.0.9",
+  "description": "Pixi.js rulers for measurement",
+  "author": "Jason Sturges <jason@jsonsturges.com> (https://jasonsturges.com)",
+  "homepage": "https://github.com/jasonsturges/pixi-rulers",
+  "license": "ISC",
+  "keywords": [
+    "pixi",
+    "rulers",
+    "measurement",
+    "drawing"
+  ],
+  "main": "dist/pixi-rulers.cjs.js",
+  "module": "dist/pixi-rulers.esm.js",
+  "browser": "dist/pixi-rulers.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "pixi.js": "^5.3.8"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.29.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^4.2.2"
+  }
+}
