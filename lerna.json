@@ -1,5 +1,10 @@
 {
   "npmClient": "npm",
+  "command": {
+    "publish": {
+      "allowBranch": "main"
+    }
+  },
   "packages": [
     "packages/*"
   ],
