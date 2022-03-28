@@ -13,9 +13,9 @@
     "pixi",
     "editor"
   ],
-  "main": "dist/cjs/pixi-editor.cjs.js",
-  "module": "dist/esm/pixi-editor.esm.js",
-  "browser": "dist/browser/pixi-editor.umd.js",
+  "main": "dist/cjs/pixi-editor.js",
+  "module": "dist/esm/pixi-editor.js",
+  "browser": "dist/browser/pixi-editor.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
