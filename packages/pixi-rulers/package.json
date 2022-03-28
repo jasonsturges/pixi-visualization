@@ -15,9 +15,9 @@
     "measurement",
     "drawing"
   ],
-  "main": "dist/pixi-rulers.cjs.js",
-  "module": "dist/pixi-rulers.esm.js",
-  "browser": "dist/pixi-rulers.umd.js",
+  "main": "dist/cjs/pixi-rulers.js",
+  "module": "dist/esm/pixi-rulers.js",
+  "browser": "dist/umd/pixi-rulers.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
